@@ -1,0 +1,14 @@
+# Abalone Gene Expression Dataset
+*Amelia Papa November 2020*
+The data for this project comes from the following paper by JCU researchers and was analysed as part of a university course called BC5203: Advanced Bioinformatics, 
+coordinated by Ira Cooke.
+
+
+### Load the necessary libraries
+```{R}
+wget 'https://cloudstor.aarnet.edu.au/plus/s/P3AMORiB2ZrbywE/download' -O data.tgz
+tar -zxvf data.tgz
+counts <- read_tsv("raw_data/Abalone/count_table.tsv")
+metadata <- read_tsv("raw_data/Abalone/metadata.tsv")
+```
+
